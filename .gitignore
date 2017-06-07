@@ -5,3 +5,5 @@ __pycache__
 *.pyc
 geckodriver.log
 result.json
+assets/
+*.html
