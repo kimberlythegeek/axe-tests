@@ -4,18 +4,20 @@
 
 
 class AccessiblityRule:
-    """A rule for designing accessible websites and web applications.
+    """
+    A rule for designing accessible websites and web applications.
 
-    Args:
-        json_result (dict): Dictionary of the axe-core JSON result for this rule.
-        fail (bool): True if this rule is violated.
-    Attributes:
-        id (str): Identifier used by axe-core for this rule.
-        fail (bool): True if this rule is violated.
-        description (str): A brief description of the acessibility rule.
-        help (str): A helpful message on why this rule failed.
-        helpUrl (str): URL reference for this accessibility rule.
-        nodes (list): A list of dictionaries containing relevant HTML elements.
+    :param json_result: Dictionary of the axe-core JSON result for this rule.
+    :param fail: True if this rule is violated.
+    :type json_result: dict
+    :type fail: bool
+
+    id (str): Identifier used by axe-core for this rule.
+    fail (bool): True if this rule is violated.
+    description (str): A brief description of the acessibility rule.
+    help (str): A helpful message on why this rule failed.
+    helpUrl (str): URL reference for this accessibility rule.
+    nodes (list): A list of dictionaries containing relevant HTML elements.
     """
     def __init__(self, json_result):
         self.id = json_result['id']
